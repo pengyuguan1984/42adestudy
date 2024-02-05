@@ -1,6 +1,10 @@
 #include <unistd.h>
 
-void ft_putchar(char c)
-{
-	write(1, &c, 1);
+void display_character(char c){
+	write(1,&c,1);
+}
+int main(){
+	char character = 'A';
+	display_character(character);
+	return 0;
 }
